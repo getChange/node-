@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    实例2：<br />
+    <input name='resetmap' type='button' id='resetmap' onclick='{if(confirm("您确定要重置地图吗?\n\n重置地图需要花费您100颗普通豆豆！")){return true;}return false;}' value='点我' runat='server' />
+    <input type='button' onclick='disp_confirm()' value=“Display a confirm box” />
+    <script>
+        function disp_confirm() {
+            var r = confirm(' 显示一个确认框 ')
+            if (r == true) {
+                document.write('You pressed OK! ');
+            } else {
+                document.write('You pressed Cancel! ')
+            }
+        }
+    </script>
+</body>
+
+</html>
